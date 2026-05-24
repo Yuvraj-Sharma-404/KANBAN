@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100 w-100">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KANBAN</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+<body class="m-0 p-0 h-100 w-100 bg-color primary-text-color">
+<main class="h-100 d-flex flex-column">
+    <nav class="p-nav d-flex align-items-center justify-content-between">
+        <div>Kanban</div>
+        <div><button class="btn-color border-0 primary-text-color btn-padding border-radius-m" id="toggle-modal">Add new Task</button></div>
+        </nav>
+        <section class="p-section d-flex justify-content-between flex-grow-1">
+          <div id="todo" class="task-column">
+          <div class="heading">
+            <div class="left">To Do</div>
+            <div class="right">Count</div>
+            </div>
+            <div draggable="true" class="task">
+              <h2>Task 1</h2>
+              <p>Description for Task 1</p>
+              <button>Delete</button>
+            </div>
+          </div>
+          <div id="progress" class="task-column">
+            <div class="heading">
+              <div class="left">In Progress</div>
+              <div class="right">Count</div>
+            </div>
+          </div>
+          <div id="done" class="task-column">
+            <div class="heading">
+              <div class="left">Done</div>
+              <div class="right">Count</div>
+            </div>
+          </div>
+        </section>
+</main>
+
+  <div class="modal add-new-task">
+    <div class="bg"></div>
+    <div class="center">
+    <input type="text" placeholder="Task Title">
+    <textarea placeholder="Task Description"></textarea>
+    <button class="add-task-btn remove" id="add-new-task">Add Task</button>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+</body>
+</html>
