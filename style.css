@@ -99,11 +99,13 @@ section .task-column{
     gap: var(--padding-m);
     border-radius: var(--border-radius-m);
     transition: all 0.7s cubic-bezier(0.19, 1, 0.22, 1);
+    width: 100%;
 }
 
 section .hover-over{
     border: 2px dashed var(--primary-text-color);
     scale: 1.05;
+    background: rgba(0, 123, 225, 0.1);
 }
 
 section{
@@ -189,4 +191,8 @@ section .task-column .task button{
     width: 100%;
     background-color: rgba(61, 61, 61, 0.404);
     backdrop-filter: blur(5px);
+}
+
+.dragging{
+    opacity: 0.5;
 }
